@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./resources/fonts/InconsolataWeb/Inconsolata-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./resources/fonts/InconsolataWeb/Inconsolata-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./resources/fonts/InconsolataWeb/Inconsolata-ExtraLight.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata';
+    font-weight: 500;
+}
+
+main {
+    position: relative;
+    width: fit-content;
+}
+
+nav {
+    color: rgb(185, 191, 196);
+}
+
+.categories {
+    line-height: 1.5rem;
+}
+
+#navRight {
+    position: fixed;
+    text-align: right;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.8rem;
+    font-family: 'Inconsolata';
+    font-weight: 500;
+    z-index: 5;
+}
+
+#navRightGallery {
+    color: rgb(150, 150, 150);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+li:hover {
+    color: rgb(150, 150, 150);
+    cursor: pointer;
+}
+
+.Canvas {
+    display: grid;
+    height: 100vh;
+    width: max-content;
+    align-items: flex-start;
+    justify-content: space-around;
+    grid-template-rows: 0.1fr 1fr;
+}
+
+.pageNav {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    color: rgb(185, 191, 196);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.captionDiv {
+    color: rgb(150, 150, 150);
+    display: grid;
+    padding-top: 20rem;
+    padding-left: 12rem;
+    grid-template-columns: repeat(50, 0.6fr 0.6fr);
+    grid-column-gap: 0.5rem;
+}
+
+.caption-content {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 50px;
+    line-height: 0.6rem;
+    padding: 0rem 1.2rem;
+}
+
+#issue {
+    font-weight: light;
+    color: rgb(185, 191, 196);
+    line-height: 1.2rem;
+}
+
+#name {
+    font-style: italic;
+    font-weight: light;
+    font-size: 0.6rem;
+    color: rgb(150, 150, 150);
+    text-align: center;
+}
+
+.imgGallery {
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    padding-top: 20rem;
+    padding-left: 12rem;
+}
+
+img {
+    width: 6rem;
+    z-index: 1;
+    opacity: 0.6;
+    margin: 0 auto;
+    /* horizontally center the image */
+}
+
+img:hover {
+    animation: zoom 0.8s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+body:has(img:hover) #captionHover {
+    width: 8rem;
+    font-size: 0.8rem;
+}
+
+@keyframes zoom {
+    0% {
+        width: 8rem;
+    }
+    100% {
+        width: 15rem;
+    }
+}
+
+
+/* The dropdown menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    min-width: auto;
+    overflow: auto;
+    z-index: 1;
+    font-style: italic;
+}
+
+.dropdown-content a {
+    color: rgb(185, 191, 196);
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0;
+    color: rgb(150, 150, 150);
+}
+
+.show {
+    display: block;
+}
