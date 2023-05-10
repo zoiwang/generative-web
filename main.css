@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+h3 {
+    padding-top: 10rem;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h5 {
+    margin-top: 12rem;
+    line-height: 1.2rem;
+    text-align: center;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#link {
+    text-align: center;
+    font-family: 'Cutive Mono', monospace;
+    font-style: italic;
+    text-decoration: underline;
+}
